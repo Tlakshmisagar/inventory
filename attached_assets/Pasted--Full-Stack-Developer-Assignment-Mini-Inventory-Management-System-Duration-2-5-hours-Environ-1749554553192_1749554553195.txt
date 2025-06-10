@@ -1,0 +1,68 @@
+🧪 Full-Stack Developer Assignment: Mini Inventory Management System
+⏱ Duration: 2.5 hours
+Environment: Use any online IDE (e.g., Replit, Bolt, CodeSandbox) with support for Node.js, Python, or your preferred full-stack framework.
+Proctoring: You will be screensharing during the test. Make sure your internet and mic are working.
+________________________________________
+🧩 Problem Statement
+Build a Mini Inventory Management System for a small warehouse. The system should support the following:
+Core Requirements:
+1.	Authentication (Optional but Bonus)
+o	Simple login screen (no need for real auth — hardcoded user is fine)
+2.	Products
+o	Add a new product: name, SKU, category, initial stock
+o	Update a product’s stock (Add or Subtract quantity)
+o	List all products with current stock
+3.	Transactions
+o	Record transactions (either IN or OUT) for a product
+o	Show transaction history per product
+o	Each transaction has: product_id, type (IN/OUT), quantity, timestamp
+4.	Basic UI
+o	UI should allow:
+	Adding/editing products
+	Adjusting stock via transactions
+	Viewing product list with current stock
+	Viewing transaction history for a selected product
+________________________________________
+🔧 Technical Expectations
+•	Use a lightweight backend (Node.js + Express, Python Flask/FastAPI, etc.)
+•	Use an in-memory DB (e.g., SQLite, JSON file, or arrays/objects in memory) OR any DB of your choice if easy to set up
+•	Frontend using HTML/CSS + JS, or frameworks like React/Vue/Svelte
+•	APIs for:
+o	GET/POST products
+o	POST transaction
+o	GET product-wise transaction history
+________________________________________
+📦 Suggested Schema (You can deviate if justified)
+Product
+•	id (string or number)
+•	name
+•	sku
+•	category
+•	current_stock
+Transaction
+•	id
+•	product_id (FK)
+•	type (IN/OUT)
+•	quantity
+•	timestamp
+________________________________________
+📝 What We’re Looking For
+•	Clean code structure and separation of concerns
+•	RESTful API design
+•	DB schema design sense
+•	Frontend usability (basic but functional UI)
+•	Error handling and edge-case thinking
+•	Use of async operations if applicable
+________________________________________
+🚀 Bonus (if time permits)
+•	Simple login functionality with hardcoded credentials
+•	Filtering products by category
+•	Sorting transaction history by date
+________________________________________
+📤 Submission
+At the end of 2.5 hours, share:
+•	A public link to your project
+o	Host the build version on any free hosting platform and send us the link to login page
+•	Any notes or assumptions you made
+•	Short README (even inline) on how to run/test
+
